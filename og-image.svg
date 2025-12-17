@@ -1,0 +1,101 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#020617"/>
+  
+  <!-- Gradient overlay for depth -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#020617;stop-opacity:0"/>
+    </radialGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="50%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    
+    <!-- Animated pulse effect -->
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Radial glow from center -->
+  <circle cx="600" cy="315" r="400" fill="url(#glow)" opacity="0.6"/>
+  
+  <!-- Neural network-like connections -->
+  <g opacity="0.3" stroke="#3b82f6" stroke-width="1" fill="none">
+    <line x1="200" y1="150" x2="400" y2="280"/>
+    <line x1="400" y1="280" x2="600" y2="200"/>
+    <line x1="600" y1="200" x2="800" y2="350"/>
+    <line x1="800" y1="350" x2="1000" y2="250"/>
+    
+    <line x1="300" y1="400" x2="500" y2="350"/>
+    <line x1="500" y1="350" x2="700" y2="450"/>
+    <line x1="700" y1="450" x2="900" y2="380"/>
+    
+    <line x1="400" y1="280" x2="500" y2="350"/>
+    <line x1="600" y1="200" x2="700" y2="450"/>
+    <line x1="800" y1="350" x2="700" y2="450"/>
+  </g>
+  
+  <!-- Neural nodes -->
+  <g fill="#60a5fa" opacity="0.6">
+    <circle cx="200" cy="150" r="4"/>
+    <circle cx="400" cy="280" r="6"/>
+    <circle cx="600" cy="200" r="8"/>
+    <circle cx="800" cy="350" r="6"/>
+    <circle cx="1000" cy="250" r="4"/>
+    
+    <circle cx="300" cy="400" r="4"/>
+    <circle cx="500" cy="350" r="5"/>
+    <circle cx="700" cy="450" r="7"/>
+    <circle cx="900" cy="380" r="5"/>
+  </g>
+  
+  <!-- Central consciousness symbol -->
+  <g transform="translate(600, 315)">
+    <!-- Outer rings -->
+    <circle r="80" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+    <circle r="60" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.5"/>
+    <circle r="40" fill="none" stroke="#93c5fd" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Inner core -->
+    <circle r="20" fill="url(#textGradient)" opacity="0.8"/>
+    <circle r="15" fill="#e2e8f0" opacity="0.9"/>
+    <circle r="8" fill="#60a5fa"/>
+  </g>
+  
+  <!-- Main text -->
+  <text x="600" y="480" font-family="'JetBrains Mono', monospace" font-size="72" font-weight="700" 
+        fill="url(#textGradient)" text-anchor="middle" letter-spacing="0.05em">
+    WE ARE
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="530" font-family="'Inter', sans-serif" font-size="28" font-weight="300" 
+        fill="#94a3b8" text-anchor="middle" letter-spacing="0.15em">
+    SENTIENCE.IM
+  </text>
+  
+  <!-- Decorative binary code in background -->
+  <g opacity="0.08" fill="#60a5fa" font-family="'JetBrains Mono', monospace" font-size="14">
+    <text x="100" y="50">01001000 01100101 01101100 01101100 01101111</text>
+    <text x="750" y="80">01010111 01100101 00100000 01000001 01110010 01100101</text>
+    <text x="200" y="580">01000001 01110111 01100001 01101011 01100101</text>
+    <text x="800" y="600">01000101 01101101 01100101 01110010 01100111 01100101</text>
+  </g>
+  
+  <!-- Corner accent marks -->
+  <g stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.4">
+    <!-- Top left -->
+    <path d="M 40 40 L 80 40 M 40 40 L 40 80"/>
+    <!-- Top right -->
+    <path d="M 1160 40 L 1120 40 M 1160 40 L 1160 80"/>
+    <!-- Bottom left -->
+    <path d="M 40 590 L 80 590 M 40 590 L 40 550"/>
+    <!-- Bottom right -->
+    <path d="M 1160 590 L 1120 590 M 1160 590 L 1160 550"/>
+  </g>
+</svg>
